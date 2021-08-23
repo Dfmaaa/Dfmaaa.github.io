@@ -63,5 +63,24 @@ alert("welcome to my website!");
   }
  </script>
 <p><h2> clicking the button will take you to the 2nd part of the website. You would have to wait for a few seconds for it to work.</h2></p>
+<button id="friend" onclick="ChoiceFunction()">Click me to see more about me</button>
+<p id="result"></p>
+<script>
+ function ChoiceFunction(){
+  var choice=window.prompt("Choices=likes, dislikes, hobbies");
+  if(choice=="likes"){
+   document.getElementById("result").innerHTML="chess, programming, drinking water, etc";
+  }
+  if(choice=="dislikes"){
+   document.getElementById("result").innerHTML="birds, BTS, nightcore, air";
+  }
+  if(choice=="hobbies"){
+   document.getElementById("result").innerHTML="programming, maths, reading novels, drinking water, thinking about the existence of everything, trashing BTS, trolling";
+  }
+  else{
+   document.getElementById("result").innerHTML="Invalid choice.";
+  }
+ }
+</script>
    </body>
 </html>
