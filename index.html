@@ -12,9 +12,7 @@ alert("welcome to my website!");
     var sound = new Howl({
       src: ['ussr.mp3'],
       volume: 100.0,
-      onend: function () {
-        console.log("finished setup");
-      }
+      onend: console.log("finished");
     });
     sound.play()
 </script>
