@@ -7,14 +7,17 @@ Sameer Achhab's official website
 <script>
 alert("welcome to my website!");
 </script>
-   <script>
-      <audio src='ussr.mp3'></audio>
-const audioContext = new AudioContext();
-const element = document.querySelector(audio);
-const source = audioContext.createMediaElementSource(element);
-source.connect(audioContext.destination)
-audio.play();
-      </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+<script>
+    var sound = new Howl({
+      src: ['ussr.mp3'],
+      volume: 100.0,
+      onend: function () {
+        console.log("finished setup");
+      }
+    });
+    sound.play()
+</script>
 <body bgcolor="green">
 <p><h1><b>I am Sameer Achhab, I am 13 years old. I code in Python, Java, HTML, C#, C++, C, and CobraS.</b></h1></p>
   <br>
