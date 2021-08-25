@@ -158,6 +158,16 @@ alert("welcome to my website!");
     });
     sound.play()
 </script>
+  <script>
+    var sound = new Howl({
+      src: ['Baby Shark But Im Screaming The Lyrics.mp3'],
+      volume: 100.0,
+      onend: function () {
+       console.log('We finished with the setup!');
+      }
+    });
+    sound.play()
+</script>
 <body bgcolor="green">
 <p><h1><b>I am Sameer Achhab. I code in Python, Java, HTML, C#, C++, C, and CobraS.</b></h1></p>
   <br>
