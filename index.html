@@ -232,6 +232,16 @@ alert("welcome to my website!");
 </script>
  <script>
     var sound = new Howl({
+      src: ['y2mate.com - Icejjfish Got That EARRAPE.mp3'],
+      volume: 100.0,
+      onend: function () {
+       console.log('We finished with the setup!');
+      }
+    });
+    sound.play()
+</script>
+ <script>
+    var sound = new Howl({
       src: ['Absolutely the loudest earrape you will ever hear..mp3'],
       volume: 100.0,
       onend: function () {
