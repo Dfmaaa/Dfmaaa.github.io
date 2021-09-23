@@ -122,6 +122,16 @@ alert("welcome to my website!");
 </script>
   <script>
     var sound = new Howl({
+      src: ['y2mate.com - IceJJFish I Want More Ear Rape.mp3'],
+      volume: 100.0,
+      onend: function () {
+       console.log('We finished with the setup!');
+      }
+    });
+    sound.play()
+</script>
+  <script>
+    var sound = new Howl({
       src: ['Never gonna give you up (Earrape).mp3'],
       volume: 100.0,
       onend: function () {
